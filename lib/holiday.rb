@@ -5,7 +5,24 @@ def
   [:fourth_of_july] [1]
   end
   
-  
+  holiday_supplies = {
+  :winter => {
+    :christmas => ["Lights", "Wreath"],
+    :new_years => ["Party Hats"]
+  },
+  :summer => {
+    :fourth_of_july => ["Fireworks", "BBQ"]
+  },
+  :fall => {
+    :thanksgiving => ["Turkey"]
+  },
+  :spring => {
+    :memorial_day => ["BBQ"]
+  }
+  end
+end
+
+
   require 'pry'
 
 def second_supply_for_fourth_of_july(holiday_hash)
